@@ -5,20 +5,20 @@
            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="engine" class="com.bridgelabz.Engine" />
-    <bean id="car1" class="com.bridgelabz.Car">
+    <bean id="car1" class="com.bridgelabz.Car" autowire="byType">
         <!--       <constructor-arg ref="engine"/>-->
         <property name="model" value="Tesla" />
-        <property name="engine" ref="engine" />
+<!--        <property name="engine" ref="engine" />-->
     </bean>
-    <bean id="car2" class="com.bridgelabz.Car">
+    <bean id="car2" class="com.bridgelabz.Car" autowire="byType">
         <!--       <constructor-arg ref="engine"/>-->
         <property name="model" value="bmw" />
-        <property name="engine" ref="engine" />
+<!--        <property name="engine" ref="engine" />-->
     </bean>
-    <bean id="car3" class="com.bridgelabz.Car">
+    <bean id="car3" class="com.bridgelabz.Car" autowire="byType">
         <!--       <constructor-arg ref="engine"/>-->
         <property name="model" value="audi" />
-        <property name="engine" ref="engine" />
+<!--        <property name="engine" ref="engine" />-->
     </bean>
 
     <bean id="garage" class="com.bridgelabz.Garage">
